@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTwitter } from "react-icons/fa";
 import { links, social } from "../utils/data";
 
 import logo from "./logo.svg";
@@ -16,21 +16,40 @@ const Navbar = () => {
         </div>
         <div className="links-container show-container">
           <ul className="links">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Products</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            {/*  {links.map((link) => (
+              <ul className="links">
+                <li key={link.id}>
+                  <a href={link.url}> {link.text} </a>
+                </li>
+              </ul>
+            ))} */}
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return (
+                <li key={id}>
+                  <a href={url}>{text}</a>
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <ul className="social-icon"></ul>
+        <ul className="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <FaTwitter />
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );
