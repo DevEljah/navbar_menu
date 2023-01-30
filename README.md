@@ -1,3 +1,5 @@
+## This Project has been one the very usuful John Smilga's React-Course-Projects I have attended // learned a lot thx to him!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
