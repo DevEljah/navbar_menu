@@ -32,12 +32,12 @@ export const social = [
   {
     id: 1,
     url: "https://www.twitter.com",
-    icon: <FaFacebook />,
+    icon: <FaTwitter />,
   },
   {
     id: 2,
     url: "https://www.twitter.com",
-    icon: <FaTwitter />,
+    icon: <FaFacebook />,
   },
   {
     id: 3,
