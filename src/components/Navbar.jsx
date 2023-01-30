@@ -1,5 +1,24 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { FaBars } from "react-icons/fa";
+import { links, social } from "../utils/data";
 
-export default function Navbar() {
-  return <div>Navbar</div>;
-}
+import logo from "./logo.svg";
+
+const Navbar = () => {
+  return (
+    <nav>
+      <div className="nav-center">
+        <div className="nav-header">
+          <img src={logo} alt="logo" />
+          <button className="nav-toggle">
+            <FaBars />
+          </button>
+        </div>
+        <div className="links-container show-container"></div>
+        <ul className="social-icons"></ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
