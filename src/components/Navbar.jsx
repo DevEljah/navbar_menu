@@ -7,16 +7,19 @@ import logo from "./logo.svg";
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
-  const handleToggle = () => {
+  /*  const handleToggle = () => {
     setShowLinks(!showLinks);
-  };
+  }; */
 
   return (
     <nav>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="logo" />
-          <button onClick={handleToggle} className="nav-toggle">
+          <button
+            onClick={() => setShowLinks(!showLinks)}
+            className="nav-toggle"
+          >
             <FaBars />
           </button>
         </div>
