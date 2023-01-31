@@ -1,4 +1,4 @@
-## This Project has been one the very usuful John Smilga's React-Course-Projects I have attended (course purchased on udemy.com) // learned a lot thx to him!
+## This Project has been one of the very usuful John Smilga's React-Course-Projects I have attended (course purchased on udemy.com) // learned a lot thx to him!
 
 # Getting Started with Create React App
 
