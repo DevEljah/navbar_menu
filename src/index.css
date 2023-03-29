@@ -187,7 +187,7 @@ nav {
   transition: var(--transition);
 }
 .show-container {
-  height: 10rem;
+  height: 10rem; /* no need for this for now be of "useEffect" function */
 }
 
 @media screen and (min-width: 800px) {

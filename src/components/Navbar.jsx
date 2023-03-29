@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaBars, FaTwitter } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { links, social } from "./data";
 
 import logo from "./logo.svg";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
+
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
 
@@ -23,12 +24,11 @@ const Navbar = () => {
   /*  const handleToggle = () => {
     setShowLinks(!showLinks);
   }; */
-
   return (
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} alt="logo" />
+          <img style={{ width: "60px" }} src={logo} alt="logo" />
           <button
             onClick={() => setShowLinks(!showLinks)}
             className="nav-toggle"
@@ -58,8 +58,8 @@ const Navbar = () => {
         </div>
 
         <ul className="social-icons">
-          {social.map((soIcon) => {
-            const { id, url, icon } = soIcon;
+          {social.map((socialIcon) => {
+            const { id, url, icon } = socialIcon;
             return (
               <li key={id}>
                 <a href={url}>{icon}</a>
